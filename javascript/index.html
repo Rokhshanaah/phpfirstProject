@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    //javascript array
+
+    let array=["apple","banana","ahmad",22,["ali","mahmmod","sara"]];
+     array[3]="hasiba";
+    //console.log(array);
+
+    //task
+
+    let countries=["afg","uk","iran"];
+    countries[2]="ozbakistan";
+    //console.log(countries);
+
+    let colors=["red","blue","green",["orange"],["gray"]];
+
+   // console.log(colors[3][0]);
+//array methods
+
+let supers=['batman','superman','flash',"red","blue","green",["orange"],["gray"]];
+//console.log(supers.length-1);
+/*console.log(supers);
+console.log(supers.indexOf('flash'));
+console.log(supers.includes('flash'));
+console.log(supers.pop('flash'));
+console.log(supers);
+console.log(supers.shift('flash'));
+console.log(supers);*/
+// console.log(supers);
+
+// console.log(supers.unshift('flash'));
+// console.log(supers.push('spider'));
+// console.log(supers);
+
+//let newArray=supers.concat(["ds","sd","dsd"]);
+//console.log(newArray);
+//console.log(supers.join(', '));
+
+console.log(supers.reverse());
+console.log(supers.sort());
+
+//Array iterator method
+
+supers.forEach(
+    function(value,index,array){
+        //console.log(value);
+
+    }
+)
+
+
+let numbers=[1,2,3,3,4,5,6,67,87,8,9,88,7,66,55,44];
+
+// let evenNumber=numbers.filter(
+//     function (value,index,array){
+//         return value %2 ===0;
+//     }
+// )
+// console.log(evenNumber);
+
+function add(total,value,index,array){
+    return total+value;
+}
+
+let sum = numbers.reduce(add);
+console.log(sum);
+
+
+
+</script>
+
+</body>
+</html>
