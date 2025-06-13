@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="Playground">Magic of the DOM</div>
+
+    <script>
+   const playground = document.getElementById("Playground");
+//    playground.append('Wizard');
+
+
+//    const magic=document.createElement('div');
+//    magic.textContent="Afghanistan";
+//    playground.append(magic);
+
+//   const scrollOfWisdom =document.createElement('p');
+//    playground.append(scrollOfWisdom);
+//    scrollOfWisdom.textContent = 'herat is one of city of afghanistan';
+//    console.log(scrollOfWisdom.textContent);
+
+  // const spellBook=document.createElement('div');
+   //playground.innerHtml ='</p>spells incloude: <strong>Location </strong> and <em>Invisibility</em></p>';
+   //playground.append(spellBook);
+//    console.log(playground.textContent);
+//    console.log(playground.innerHTML);
+
+
+//    const userInput ='<img src="x" onerrore="alert(\'Hacked!\')">';
+//    playground.innerHTML = userInput;
+
+
+// const temporaryElement=document.createElement('p');
+// temporaryElement.textContent="Now you see me...";
+// playground.append(temporaryElement);
+
+// const fruiteBox=document.createElement('div');
+
+// fruiteBox.innerHTML=" <p>cherry</p> <p>Apple</p> <p>Banana</p>";
+// playground.append(fruiteBox);
+
+// while (fruiteBox.firstChild) {
+//     fruiteBox.removeChild(fruiteBox.firstChild);
+    
+// }
+
+// const magicwand=document.createElement('div');
+// magicwand.setAttribute('id','wand1');
+// magicwand.setAttribute('class','magical');
+// magicwand.textContent="Magic Wand";
+// playground.append(magicwand);
+
+// const shape=document.createElement('div');
+// shape.textContent="shapeshifter";
+// playground.append(shape);
+
+// shape.classList.add('magical','creature');
+// console.log('initial claases:',shape.className);
+
+// const gyme=document.createElement('div');
+// gyme.textContent="Hello";
+// gyme.style.fontSize='50px';
+// gyme.style.transition='all 2s';
+// playground.append(gyme);
+
+// const magicButton=document.createElement('button');
+// magicButton.textContent='Cast Spell';
+// playground.append(magicButton);
+
+// magicButton.addEventListener('click',()=>{
+//     alert("Magic sparkless fill the air!");
+// });
+
+// magicButton.addEventListener('mouseover',(event)=>{
+//     event.target.style.backgroundColor="purple";
+// })
+// magicButton.addEventListener('mouseover',(event)=>{
+//     event.target.style.backgroundColor="";
+// })
+
+const spellist=document.createElement('ul');
+playground.append(spellist);
+
+function addlist(spellName) {
+    const spell= document.createElement('li');
+    spell.textContent=spellName;
+    const removeButton=document.createElement('button');
+    removeButton.textContent="remove";
+    removeButton.addEventListener("click",()=>spell.remove());
+    spell.append(removeButton);
+    spellist.append(spell);
+
+
+
+}
+
+
+
+    </script>
+</body>
+</html>

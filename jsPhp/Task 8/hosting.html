@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let game;
+        // game="super man";
+        // console.log(game);
+
+        function lion(name) {
+            console.log(`the lions name is ${name}`);
+        }
+        lion("Aslan");
+
+        function book(title) {
+            console.log(`the book is called ${title}`);
+        }
+        book('english');
+
+
+        //Scope
+
+        let game='sonick';
+        console.log(game);
+
+        function title1() {
+            console.log(`${game}`);
+
+        }
+        title1();
+
+        function a(){
+            let game ="sonic";
+            console.log(game);
+
+        }
+        a();
+        if (true) {
+            let game ='Mario';
+            console.log(game);
+        }
+
+
+        //Task
+
+        let firstName="johon";
+        let LastName="Ahmadi";
+        let age="25";
+        let country="Afghanistan";
+        function user() {
+            console.log(`${firstName},${LastName} is,${age} years old and lives in ${country}`);
+        }
+    
+        user();
+
+    </script>
+</body>
+</html>
