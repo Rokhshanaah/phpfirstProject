@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: sans-serif;
+        direction: rtl;
+        background-color: #fdfdfd;
+        padding: 20px;
+      
+    }
+    .profile-container{
+        position: relative;
+        display: inline-block;
+        
+
+       
+    }
+    .profile-img{
+
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        cursor: pointer;
+
+    }
+    .profile-meno{
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: white;
+        border: 1px solid#ddd;
+        box-shadow: 0 0 0 rgb(0, 0, 0.1);
+        border-radius: 10px;
+        width: 200px;
+        z-index: 1;
+    }
+    .profile-meno p{
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        color: #333;
+        font-size: 14px;
+    }
+     #img{
+        width: 20px;
+    }
+</style>
+<body>
+    <div class="profile-container">
+        <img src="IMG_20250617_152630_878.jpg" alt="profile" srcset=""class="profile-img" onclick="toggleMenu()" >
+        <div class="profile-meno" id="menu">
+            <p><strong>Mohammad Saleh Ahmadi</strong></p>
+
+            <p><span><img src="IMG_20250617_152630_357.jpg" alt="" id="img" srcset=""></span>Favorite</p>
+            <p><span><img src="IMG_20250617_152630_745.jpg" alt="" id="img" srcset=""></span>Sitting</p>
+            <p><span><img src="IMG_20250617_152630_816.jpg" alt="" id="img" srcset=""></span>logout</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu(){
+            const menu=document.getElementById('menu');
+            menu.style.display=(menu.style.display==='block')? 'non':'block';
+        }
+    </script>
+</body>
+</html>
